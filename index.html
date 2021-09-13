@@ -1,0 +1,89 @@
+<html>
+
+    <head>
+        <title> Cadastro </title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <script src="js/validacao.js"></script>
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="form_box">
+                <h2> Formulário de cadastro </h2>
+
+                <form action="concluido.html">
+
+                    <!-- 1 - Linha do formulário -->
+                    <div class="f_line">
+                        <span>
+                            <label> Nome </label>
+                            <input type="text" id="i_nome" required>
+                        </span>
+
+                        <span>
+                            <label> Sobrenome </label>
+                            <input type="text" id="i_sobrenome" required>
+                        </span>
+                    </div>
+
+                    <!-- 2 - Linha do formulário -->
+                    <div class="f_line">
+                        <span>
+                            <label> Data de nascimento </label>
+                            <input type="date" id="i_data" required>
+                        </span>
+
+                        <span>
+                            <label> Formação </label>
+                            <select id="i_formacao">
+                                <option value="ef"> Ensino fundamental </option>
+                                <option value="em"> Ensino médio </option>
+                                <option value="es"> Ensino superior </option>
+                            </select>
+                        </span>
+                    </div>
+
+                    <!-- 3 - Linha do formulário -->
+                    <div class="f_line">
+                        <span>
+                            <label> Gênero </label>
+                            
+                            <input type="radio" value="m" name="i_genero" checked>
+                            Masculino
+                            
+                            <input type="radio" value="f" name="i_genero">
+                            Feminino
+                            
+                            <input type="radio" value="o" name="i_genero">
+                            Outros
+                        </span>
+                    </div>
+
+                    <!-- 4 - Linha do formulário -->
+                    <div class="f_line">
+                        <span> 
+                            <label> Senha </label>
+                            <input type="password" id="i_senha" required>
+                        </span>
+
+                        <span>
+                            <label> Confirma senha </label>
+                            <input type="password" id="i_conf_senha" required>
+                        </span>
+                    </div>
+
+                    <!-- 5 - Linha do formulário -->
+                    <div class="f_line">
+                        <span>
+                            <input type="submit" id="btt_form" value="Cadastrar" onclick="validacao()" >
+                        </span>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </body>
+
+</html>
